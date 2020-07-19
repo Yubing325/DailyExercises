@@ -1,3 +1,7 @@
 .nav-link.disabled{
-    color: red;
+    color: red;    
+}
+
+ul.navbar-nav .nav-item .nav-link.nav-link.disabled {
+    color: green;    
 }
