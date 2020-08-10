@@ -13,12 +13,23 @@ obj1= {
     Job:{
         title: "Dr",
         Company: "Microsoft",
-        Salary: "13000"
+        Salary: {
+            base: "10000",
+            bonus: "30000",
+            stocks: "2000",
+            other: {
+                bonus: 100
+            }
+        }
     },
     Gender: "Male"
 }
 
-var {name, DOB: birthDate, "Job": newJob} = obj1
+var {name, Job: {Salary:{base}}} = obj1
 
-console.log(name);
-console.log(newJob);
+//console.log(name);
+//console.log(newJob);
+//console.log(Salary);
+console.log(base);
+
+//https://dmitripavlutin.com/javascript-object-destructuring/#:~:text=The%20object%20destructuring%20is%20a,the%20property%20doesn%27t%20exist.
