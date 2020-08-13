@@ -1,8 +1,8 @@
 nums = [0,10,4,9,123,54,1];
 
-var a = nums.sort();
+nums.sort();
 
-console.log(a);
+console.log(nums);
 
 let some = new Array(10).fill(null);
 
