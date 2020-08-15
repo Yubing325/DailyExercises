@@ -20,3 +20,8 @@ var another = new Dictionary<string, string>()
 };
 
 another.Dump();
+
+//another["key3"].Dump();  //will give error
+
+string val = "";
+another.TryGetValue("key3", out val); //return false in this case
