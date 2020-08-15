@@ -17,3 +17,9 @@ $ git checkout -b <new_branch>
 ## Git rebase to master workflow
  1. git commit the change
  2. in the `master` branch, `git rebase <feature_branch>`
+
+ ## Undo last commit
+
+```
+ git reset --soft HEAD~1
+```
