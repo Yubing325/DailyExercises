@@ -24,3 +24,13 @@ console.log(arry); //arry got mututated by forEach
 console.log(arry.map(t=>t*2));
 
 console.log(arry);
+
+
+let arry2 = [1,2,3,4,5];
+
+arry2.forEach((x)=>{
+    return x = x *2;
+}); //this won't change anything since no element got replaced
+
+
+console.log(arry2);
